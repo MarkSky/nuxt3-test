@@ -1,4 +1,18 @@
 {
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "eslint.codeActionsOnSave.rules": [
+        "@master/css/class-order",
+        "*"
+    ],
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "tsconfig.json": "tsconfig.*.json, env.d.ts",
+        "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+        "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .npmrc, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, stylelint.*",
+        ".env": ".env.*"
+    },
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#65c89b",
         "activityBar.background": "#65c89b",

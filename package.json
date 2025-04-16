@@ -35,7 +35,9 @@
     "@master/eslint-config-css": "2.0.0-rc.63",
     "@stylistic/eslint-plugin": "^4.2.0",
     "@types/node": "^22.14.1",
+    "@vitest/ui": "3.1.1",
     "eslint": "^9.24.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
   }
 }

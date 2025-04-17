@@ -13,7 +13,16 @@ export default defineNuxtConfig({
         '@nuxtjs/i18n',
     ],
 
-    devtools: { enabled: true }, compatibilityDate: '2024-11-01',
+    devtools: {
+        enabled: true,
+
+        vscode: {
+            reuseExistingServer: true,
+            port               : 3090,
+        },
+    },
+
+    compatibilityDate: '2024-11-01',
 
     eslint: {
         config: {
@@ -21,5 +30,14 @@ export default defineNuxtConfig({
         },
     },
 
-    i18n: {},
+    i18n: {
+        defaultLocale: 'zh-TW',
+        locales      : [
+            { code: 'zh-TW', name: 'Chinese', file: 'zh-TW.json' },
+            { code: 'en-US', name: 'English', file: 'en-US.json' },
+        ],
+        bundle: {
+            optimizeTranslationDirective: false,
+        },
+    },
 });

@@ -4,12 +4,12 @@ import masterCss from '@master/eslint-config-css';
 import stylistic from '@stylistic/eslint-plugin';
 import json from '@eslint/json';
 import markdown from '@eslint/markdown';
-import css from "@eslint/css";
+import css from '@eslint/css';
 // import tsEslint from 'typescript-eslint';
 // import tsParser from '@typescript-eslint/parser';
 // import pluginVue from 'eslint-plugin-vue';
 // import vueParser from 'vue-eslint-parser';
-// import vueI18n from '@intlify/eslint-plugin-vue-i18n';
+// import vueI18n from '@intlify/eslint-plugin-vue-i18n'; // 目前在@nuxt/eslint會出錯
 import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt(
@@ -26,11 +26,6 @@ export default withNuxt(
             '@stylistic': stylistic,
         },
         rules: {
-            // eslint:recommended
-            // "no-debugger": process.env.NODE_ENV === 'production' ? 'error' : 'off',
-            // Suggestions
-            // 'no-console': process.env.NODE_ENV === 'production' ? ['error', { allow: ['info', 'warn', 'error'] }] : 'off',
-            'prefer-arrow-callback'       : ['error'],
             '@master/css/class-order'     : ['warn'],
             '@master/css/class-validation': ['error'],
             '@master/css/class-collision' : ['warn'],
@@ -75,17 +70,24 @@ export default withNuxt(
         },
     },
     {
+        ...css.configs.recommended,
+        files   : ['**/*.css'],
+        plugins : { css },
+        language: 'css/css',
+    },
+    {
         ...json.configs.recommended,
         name   : 'app/json-files-to-lint',
         files  : ['*.json', '**/*.json'],
+        ignores: ['*.md', '**/*.md', 'package-lock.json'],
         plugins: {
             '@stylistic': stylistic,
             json,
         },
         language: 'json/json',
         rules   : {
-            'no-irregular-whitespace': ['off'],
-            '@stylistic/indent'      : ['off'],
+            'no-irregular-whitespace': 'off',
+            '@stylistic/indent'      : 'off',
         },
     },
     {
@@ -99,7 +101,7 @@ export default withNuxt(
         language: 'json/jsonc',
 
         rules: {
-            '@stylistic/indent': ['off'],
+            '@stylistic/indent': 'off',
         },
     },
     {
@@ -113,7 +115,7 @@ export default withNuxt(
         language: 'json/json5',
 
         rules: {
-            '@stylistic/indent': ['off'],
+            '@stylistic/indent': 'off',
         },
     },
     {
@@ -125,10 +127,9 @@ export default withNuxt(
         },
         language: 'markdown/commonmark',
         rules   : {
-            '@stylistic/indent'             : ['off'],
-            'markdown/no-html'              : ['error'],
-            'no-irregular-whitespace'       : ['off'],
-            'vue/multi-word-component-names': ['off'],
+            '@stylistic/indent'      : ['off'],
+            'markdown/no-html'       : ['error'],
+            'no-irregular-whitespace': ['off'],
         },
     },
     {
@@ -140,6 +141,10 @@ export default withNuxt(
         },
         rules: {
             ...eslint.configs.recommended.rules,
+            // eslint:recommended
+            // "no-debugger": process.env.NODE_ENV === 'production' ? 'error' : 'off',
+            // Suggestions
+            // 'no-console': process.env.NODE_ENV === 'production' ? ['error', { allow: ['info', 'warn', 'error'] }] : 'off',
             '@stylistic/arrow-spacing'       : ['error'],
             '@stylistic/comma-spacing'       : ['error', { before: false, after: true }],
             '@stylistic/keyword-spacing'     : ['error', { before: true, after: true }],
@@ -153,6 +158,7 @@ export default withNuxt(
             '@stylistic/space-infix-ops'     : ['error', { int32Hint: false }],
             '@stylistic/switch-colon-spacing': ['error', { after: true, before: false }],
             '@stylistic/template-tag-spacing': ['error', 'always'],
+            'prefer-arrow-callback'          : ['error'],
         },
         languageOptions: {
             parserOptions: {
@@ -162,7 +168,7 @@ export default withNuxt(
         },
     },
     {
-        name   : 'app/typescript-files-to-lint',
+        name   : 'app/typescript-files-without-declare-to-lint',
         files  : ['*.{ts,tsx,mts,mtsx,cts,ctsx}', '**/*.{ts,tsx,mts,mtsx,cts,ctsx}'],
         ignores: ['*.d.ts', '**/*.d.ts'],
         plugins: {
@@ -190,14 +196,57 @@ export default withNuxt(
             '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true }],
         },
     },
-    // ...vueI18n.configs.recommended,
     {
-        name   : 'app/component-files-to-lint',
-        files  : ['*.vue', '**/*.vue'],
+        name   : 'app/declare-files-to-lint',
+        files  : ['*.d.ts', '**/*.d.ts', 'router.d.ts'],
         plugins: {
             '@stylistic': stylistic,
         },
         rules: {
+            '@stylistic/arrow-spacing'         : 'error',
+            '@stylistic/comma-spacing'         : ['error', { before: false, after: true }],
+            '@stylistic/keyword-spacing'       : ['error', { before: true, after: true }],
+            '@stylistic/member-delimiter-style': ['error', {
+                multiline         : { delimiter: 'semi', requireLast: true },
+                singleline        : { delimiter: 'semi', requireLast: false },
+                multilineDetection: 'brackets',
+                overrides         : {
+                    interface: {
+                        multiline : { delimiter: 'semi', requireLast: true },
+                        singleline: { delimiter: 'comma', requireLast: false },
+                    },
+                },
+            }],
+            '@stylistic/multiline-ternary'      : ['error', 'always-multiline'],
+            '@stylistic/no-multi-spaces'        : 'off',
+            '@stylistic/object-curly-spacing'   : ['error', 'always'],
+            '@stylistic/quotes'                 : ['error', 'single'],
+            '@stylistic/semi'                   : ['error', 'always'],
+            '@stylistic/space-before-blocks'    : 'error',
+            '@stylistic/space-infix-ops'        : ['error', { int32Hint: false }],
+            '@stylistic/space-unary-ops'        : 'error',
+            '@stylistic/switch-colon-spacing'   : ['error', { after: true, before: false }],
+            '@stylistic/type-annotation-spacing': 'off',
+            '@stylistic/type-generic-spacing'   : 'error',
+            '@typescript-eslint/unbound-method' : 'off',
+        },
+    },
+    // ...vueI18n.configs['flat/recommended'],
+    {
+        name   : 'app/component-files-to-lint',
+        files  : ['*.vue', '**/*.vue'],
+        ignores: ['*.json', '**/*.json'],
+        plugins: {
+            '@stylistic': stylistic,
+        },
+        settings: {
+            // 'vue-i18n': {
+            //     localeDir           : 'i18n/locales/*.{json,json5,yaml,yml}',
+            //     messageSyntaxVersion: '^11.1.3',
+            // },
+        },
+        rules: {
+            // '@intlify/vue-i18n/no-raw-text'              : ['error', { ignorePattern: '^[-~#:()&/]+$' }],
             '@stylistic/arrow-spacing'                   : 'error',
             '@stylistic/comma-spacing'                   : ['error', { before: false, after: true }],
             '@stylistic/indent'                          : 'off',
@@ -240,10 +289,19 @@ export default withNuxt(
             'vue/space-unary-ops'       : 'error',
             'vue/template-curly-spacing': ['error', 'always'],
         },
-    },
-    {
-        files   : ['**/*.css'],
-        plugins : { css },
-        language: 'css/css',
+        // languageOptions: {
+        //     parser: vueParser,
+        //     parserOptions: {
+        //         parser: {
+        //             'js': tsParser,
+        //             'ts': tsParser,
+        //             '<template>': 'espree',
+        //         },
+        //         project: './tsconfig.eslint.json',
+        //         ecmaVersion: 2020,
+        //         sourceType: 'module',
+        //         extraFileExtensions: ['.vue'],
+        //     },
+        // },
     },
 );

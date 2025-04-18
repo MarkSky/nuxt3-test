@@ -52,14 +52,14 @@ importers:
         version: 4.5.0(vue@3.5.13(typescript@5.8.3))
     devDependencies:
       '@eslint/css':
-        specifier: ^0.6.0
-        version: 0.6.0
+        specifier: ^0.7.0
+        version: 0.7.0
       '@eslint/js':
         specifier: ^9.24.0
         version: 9.24.0
       '@eslint/json':
-        specifier: ^0.11.0
-        version: 0.11.0
+        specifier: ^0.12.0
+        version: 0.12.0
       '@eslint/markdown':
         specifier: ^6.3.0
         version: 6.3.0
@@ -608,8 +608,8 @@ packages:
     resolution: {integrity: sha512-QehZa9/EJbgLKBcJKjJyme3Txnahx67pD9NWEl/bNORbZi+XxQk4T/6t3j1ZiL21iuQ2VOruQWKiQhFk+XdXHg==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
 
-  '@eslint/css@0.6.0':
-    resolution: {integrity: sha512-MFjbx8n4/NS6aW65efZW22541WZZjy5HGq5ylctzlfoCiCN+Hmsi+M6kQE4drmNqLlreCBnhT9hh51fCrStMpQ==}
+  '@eslint/css@0.7.0':
+    resolution: {integrity: sha512-d6mo8etv4igrTGxgvWSgA5+TsppfObM/Xhlu8JWbkqNBiaJXztUNH45R1B4i1GL2PNIFMLREI3Kh9lTBi19l7g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/eslintrc@3.3.1':
@@ -620,8 +620,8 @@ packages:
     resolution: {integrity: sha512-uIY/y3z0uvOGX8cp1C2fiC4+ZmBhp6yZWkojtHL1YEMnRt1Y63HB9TM17proGEmeG7HeUY+UP36F0aknKYTpYA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/json@0.11.0':
-    resolution: {integrity: sha512-XSrJBMuDEP0/XgLJ/CfQc6otytZt56l/n2SCjk8qGgaw311F/aKvdCqAgXKzsBTlxi1MlM/F3K8H2e1TEBbmCA==}
+  '@eslint/json@0.12.0':
+    resolution: {integrity: sha512-n/7dz8HFStpEe4o5eYk0tdkBdGUS/ZGb0GQCeDWN1ZmRq67HMHK4vC33b0rQlTT6xdZoX935P4vstiWVk5Ying==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/markdown@6.3.0':
@@ -6265,9 +6265,9 @@ snapshots:
       mdn-data: 2.20.0
       source-map-js: 1.2.1
 
-  '@eslint/css@0.6.0':
+  '@eslint/css@0.7.0':
     dependencies:
-      '@eslint/core': 0.10.0
+      '@eslint/core': 0.13.0
       '@eslint/css-tree': 3.4.0
       '@eslint/plugin-kit': 0.2.8
 
@@ -6287,7 +6287,7 @@ snapshots:
 
   '@eslint/js@9.24.0': {}
 
-  '@eslint/json@0.11.0':
+  '@eslint/json@0.12.0':
     dependencies:
       '@eslint/core': 0.12.0
       '@eslint/plugin-kit': 0.2.8

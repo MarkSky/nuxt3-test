@@ -12,3 +12,7 @@ the module (for instance, using npm rebuild or npm install).`
 -   解決方法：
     1. 先刪除 node_modules 和 pnpm-lock.yaml，然後重新安裝依賴
     2. 重新編譯 better-sqlite3 模組 `pnpm rebuild better-sqlite3`
+
+2. 使用@intlify/eslint-plugin-vue-i18n 套件，執行 ESLint 會錯誤
+
+-   暫時不使用

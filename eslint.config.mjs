@@ -1,7 +1,6 @@
 // @ts-check
 import eslint from '@eslint/js';
 import masterCss from '@master/eslint-config-css';
-import stylistic from '@stylistic/eslint-plugin';
 import json from '@eslint/json';
 import markdown from '@eslint/markdown';
 import css from '@eslint/css';
@@ -16,15 +15,17 @@ export default withNuxt(
     // Your custom configs here
     {
         name   : 'app/files-to-ignore',
-        ignores: ['**/dist/**', '**/dist-ssr/**', '**/coverage/**', '**/node_modules/**'],
+        ignores: [
+            '**/dist/**',
+            '**/dist-ssr/**',
+            '**/coverage/**',
+            '**/node_modules/**',
+            '**/.vscode/**',
+        ],
     },
     masterCss,
-    stylistic.configs.recommended,
     {
-        name   : 'app/all-files-to-lint',
-        plugins: {
-            '@stylistic': stylistic,
-        },
+        name : 'app/all-files-to-lint',
         rules: {
             '@master/css/class-order'     : ['warn'],
             '@master/css/class-validation': ['error'],
@@ -71,6 +72,7 @@ export default withNuxt(
     },
     {
         ...css.configs.recommended,
+        name    : 'app/css-files-to-lint',
         files   : ['**/*.css'],
         plugins : { css },
         language: 'css/css',
@@ -81,7 +83,6 @@ export default withNuxt(
         files  : ['*.json', '**/*.json'],
         ignores: ['*.md', '**/*.md', 'package-lock.json'],
         plugins: {
-            '@stylistic': stylistic,
             json,
         },
         language: 'json/json',
@@ -95,7 +96,6 @@ export default withNuxt(
         name   : 'app/jsonc-files-to-lint',
         files  : ['*.jsonc', '**/*.jsonc'],
         plugins: {
-            '@stylistic': stylistic,
             json,
         },
         language: 'json/jsonc',
@@ -109,7 +109,6 @@ export default withNuxt(
         name   : 'app/json5-files-to-lint',
         files  : ['*.json5', '**/*.json5'],
         plugins: {
-            '@stylistic': stylistic,
             json,
         },
         language: 'json/json5',
@@ -122,7 +121,6 @@ export default withNuxt(
         name   : 'app/markdown-files-to-lint',
         files  : ['*.md', '**/*.md'],
         plugins: {
-            '@stylistic': stylistic,
             markdown,
         },
         language: 'markdown/commonmark',
@@ -134,18 +132,15 @@ export default withNuxt(
     },
     {
         ...eslint.configs.recommended,
-        name   : 'app/javascript-files-to-lint',
-        files  : ['**/*.{js,jsx,mjs,mjsx,cjs,cjsx}'],
-        plugins: {
-            '@stylistic': stylistic,
-        },
+        name : 'app/javascript-files-to-lint',
+        files: ['**/*.{js,jsx,mjs,mjsx,cjs,cjsx}'],
         rules: {
             ...eslint.configs.recommended.rules,
             // eslint:recommended
             // "no-debugger": process.env.NODE_ENV === 'production' ? 'error' : 'off',
             // Suggestions
             // 'no-console': process.env.NODE_ENV === 'production' ? ['error', { allow: ['info', 'warn', 'error'] }] : 'off',
-            '@stylistic/arrow-spacing'       : ['error'],
+            '@stylistic/arrow-spacing'       : 'error',
             '@stylistic/comma-spacing'       : ['error', { before: false, after: true }],
             '@stylistic/keyword-spacing'     : ['error', { before: true, after: true }],
             '@stylistic/multiline-ternary'   : ['error', 'always-multiline'],
@@ -153,12 +148,12 @@ export default withNuxt(
             '@stylistic/quotes'              : ['error', 'single'],
             '@stylistic/semi-spacing'        : ['error', { before: false, after: true }],
             '@stylistic/semi-style'          : ['error', 'last'],
-            '@stylistic/space-before-blocks' : ['error'],
+            '@stylistic/space-before-blocks' : 'error',
             '@stylistic/space-in-parens'     : ['error', 'never'],
             '@stylistic/space-infix-ops'     : ['error', { int32Hint: false }],
             '@stylistic/switch-colon-spacing': ['error', { after: true, before: false }],
             '@stylistic/template-tag-spacing': ['error', 'always'],
-            'prefer-arrow-callback'          : ['error'],
+            'prefer-arrow-callback'          : 'error',
         },
         languageOptions: {
             parserOptions: {
@@ -171,14 +166,12 @@ export default withNuxt(
         name   : 'app/typescript-files-without-declare-to-lint',
         files  : ['*.{ts,tsx,mts,mtsx,cts,ctsx}', '**/*.{ts,tsx,mts,mtsx,cts,ctsx}'],
         ignores: ['*.d.ts', '**/*.d.ts'],
-        plugins: {
-            '@stylistic': stylistic,
-        },
-        rules: {
+        rules  : {
             '@stylistic/arrow-spacing'                : 'error',
             '@stylistic/comma-spacing'                : ['error', { before: false, after: true }],
             '@stylistic/keyword-spacing'              : ['error', { before: true, after: true }],
             '@stylistic/multiline-ternary'            : ['error', 'always-multiline'],
+            '@stylistic/no-multi-spaces'              : 'off',
             '@stylistic/object-curly-spacing'         : ['error', 'always'],
             '@stylistic/quotes'                       : ['error', 'single'],
             '@stylistic/space-before-blocks'          : 'error',
@@ -186,22 +179,18 @@ export default withNuxt(
             '@stylistic/space-infix-ops'              : ['error', { int32Hint: false }],
             '@stylistic/space-unary-ops'              : 'error',
             '@stylistic/switch-colon-spacing'         : ['error', { after: true, before: false }],
-            // "@stylistic/type-annotation-spacing": ["error", { "before": false, "after": true }],
+            '@stylistic/type-annotation-spacing'      : 'off',
             '@stylistic/type-generic-spacing'         : 'error',
             // turns a rule on with no configuration (i.e. uses the default configuration)
-            '@typescript-eslint/array-type'           : ['error', { default: 'generic' }],
+            '@typescript-eslint/array-type'           : ['error', { default: 'array' }],
             // turns on a rule with configuration
             '@typescript-eslint/no-explicit-any'      : ['warn', { ignoreRestArgs: true }],
             '@typescript-eslint/no-empty-function'    : ['error', { allow: [] }],
-            '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true }],
-        },
+            '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true }] },
     },
     {
-        name   : 'app/declare-files-to-lint',
-        files  : ['*.d.ts', '**/*.d.ts', 'router.d.ts'],
-        plugins: {
-            '@stylistic': stylistic,
-        },
+        name : 'app/declare-files-to-lint',
+        files: ['*.d.ts', '**/*.d.ts', 'router.d.ts'],
         rules: {
             '@stylistic/arrow-spacing'         : 'error',
             '@stylistic/comma-spacing'         : ['error', { before: false, after: true }],
@@ -233,12 +222,9 @@ export default withNuxt(
     },
     // ...vueI18n.configs['flat/recommended'],
     {
-        name   : 'app/component-files-to-lint',
-        files  : ['*.vue', '**/*.vue'],
-        ignores: ['*.json', '**/*.json'],
-        plugins: {
-            '@stylistic': stylistic,
-        },
+        name    : 'app/component-files-to-lint',
+        files   : ['*.vue', '**/*.vue'],
+        ignores : ['*.json', '**/*.json'],
         settings: {
             // 'vue-i18n': {
             //     localeDir           : 'i18n/locales/*.{json,json5,yaml,yml}',

@@ -16,3 +16,14 @@ the module (for instance, using npm rebuild or npm install).`
 2. 使用@intlify/eslint-plugin-vue-i18n 套件，執行 ESLint 會錯誤
 
 -   暫時不使用
+
+3. 因為@nuxt/eslint 有內建@stylistic/eslint-plugin
+
+-   @nuxt/eslint → @nuxt/eslint-config → @stylistic/eslint-plugin@4.2.0
+-   不再自行手動安裝
+-   ```import stylistic from '@stylistic/eslint-plugin';``` 和 ```plugins: {}``` 內不加上 ```'@stylistic': stylistic,```
+
+
+## 參考
+
+- [TypeScript](https://nuxt.com/docs/guide/concepts/typescript)

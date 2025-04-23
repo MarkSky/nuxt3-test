@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@master/css':
-        specifier: 2.0.0-rc.65
-        version: 2.0.0-rc.65
+        specifier: 2.0.0-rc.66
+        version: 2.0.0-rc.66
       '@master/css.nuxt':
-        specifier: 2.0.0-rc.65
-        version: 2.0.0-rc.65(magicast@0.3.5)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))
+        specifier: 2.0.0-rc.66
+        version: 2.0.0-rc.66(magicast@0.3.5)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))
       '@nuxt/content':
         specifier: 3.4.0
         version: 3.4.0(magicast@0.3.5)(typescript@5.8.3)
@@ -67,8 +67,8 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1(eslint@9.25.1(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)(vue-eslint-parser@10.1.3(eslint@9.25.1(jiti@2.4.2)))(yaml-eslint-parser@1.3.0)
       '@master/eslint-config-css':
-        specifier: 2.0.0-rc.65
-        version: 2.0.0-rc.65(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+        specifier: 2.0.0-rc.66
+        version: 2.0.0-rc.66(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
       '@types/node':
         specifier: ^22.14.1
         version: 22.14.1
@@ -819,48 +819,48 @@ packages:
   '@master/colors@2.1.1':
     resolution: {integrity: sha512-Fw7peV99iYPP96P02uyUpzEcD89vimilufnxDrMP0YGPIgeXkaUWwwgDaCYcoc3uaq4BRoHd4j/VXeU/M2BZFQ==}
 
-  '@master/css-devtools-hook@2.0.0-rc.65':
-    resolution: {integrity: sha512-v+W6nfZtLa168GPbO3zIMRM/maAEDT7L30NzhEpvNmyVzHu5xpWlcs4Mxy7QQ9A65XTxfbF8pGCx7bXsJLR66Q==}
+  '@master/css-devtools-hook@2.0.0-rc.66':
+    resolution: {integrity: sha512-EUeanxM0abiIIUlOP+PytFqBE2mt+B61NJjyg7bnL8NKcaz5x4O0ztRo1W87DngT02QM5CHBrAk8aehIt+cvbA==}
 
-  '@master/css-explore-config@2.0.0-rc.65':
-    resolution: {integrity: sha512-04Zx4nk2cyIPH/0bGQAApc8kofO9MYHIFc+DnOVj7tUhvFvQ9dRQZ0RWZPggw6/B0vAtUt5ZiMtgCp7wdXvd+Q==}
+  '@master/css-explore-config@2.0.0-rc.66':
+    resolution: {integrity: sha512-ez/g98iF+Ih9w2P2vbhFXlLGr+kYRmZWXnYL0cfIpZ90ECrqKQeSAF8lrNFw43S4x94CKWwQ7YY4pzhRrgl8WQ==}
 
-  '@master/css-extractor@2.0.0-rc.65':
-    resolution: {integrity: sha512-FQJBd5VHa3chUavtXXFLKMmYcouRgAL+zTUTT5/3fht5ESkby7Z04ZX0OavyQfQbHqK4swGN97LHwMtM+N/YIw==}
+  '@master/css-extractor@2.0.0-rc.66':
+    resolution: {integrity: sha512-S6ae4M2fdSIeMP5KVOkESUx2S280lGBkduYANKldou/ttlPEwo+ljZDwF7vpIwPrWYTxBo2TXyw1x/xNubidhA==}
 
-  '@master/css-runtime@2.0.0-rc.65':
-    resolution: {integrity: sha512-lYPT/HvRXVI3XMkxmCAUBLO5874eCQiZT/KaJrcBpGCbbfxxzKq4SaDoe4XqVpBL6e/UBjKWKSJq6GcozFXdJw==}
+  '@master/css-runtime@2.0.0-rc.66':
+    resolution: {integrity: sha512-gBs0ba6sA5lAjFPdIMhnVOueGL10qqg2ogdLIvNcCzaJFheHElPY4rwXHfuBGeI7hrt3tnC8bKaVl3+IejRqdg==}
 
-  '@master/css-server@2.0.0-rc.65':
-    resolution: {integrity: sha512-OoyjOn3We+AHUt8FMJumoQmL1jOcCaSO3LOWFeLaEMIikYCxkuwwQs5usb/hb8O2CXfQ9F1Y2l8NxlZFWboSIA==}
+  '@master/css-server@2.0.0-rc.66':
+    resolution: {integrity: sha512-lKn8IMYer+tZfiEg8AKmq3++hnhA2PaJYZ+foaCdi0kiUusSf04xi+JMDfJ1rXTaO3V7oVEBJZGmMFPSdD3Hlg==}
 
-  '@master/css-validator@2.0.0-rc.65':
-    resolution: {integrity: sha512-yKUjdaCwRK199FuJxbJPMFdJxbjWmoBNzXomaE52z+9yoejhO+3DZuWihejj4Vlv6j/pAVzfv/OUTKyx+89gZQ==}
+  '@master/css-validator@2.0.0-rc.66':
+    resolution: {integrity: sha512-lIondQSsxjEC5yoe/poD/j9p3iTMa+uoxrMZ6rknWKjtuXOOSUCcETVLa8p2qqsPxcCxdpEq3AHxQYMnN4nMMQ==}
 
-  '@master/css.nuxt@2.0.0-rc.65':
-    resolution: {integrity: sha512-6MrUyb1NXPU/eNI5eKL5Bp+soRSsoeVf4hmCoBQmWmmGGusJ5irlcY8kWgc1ZmgvlldDfeV+fapGnfJMti5KGA==}
+  '@master/css.nuxt@2.0.0-rc.66':
+    resolution: {integrity: sha512-75Iz9HJnZzKPFArOxJL4cWqDiWWHYiYj2JtZRSZ9w/YxnnSJF2FQbwHwUY5eJogzeeC55FN7gZAzO8n6K3NWVw==}
 
-  '@master/css.vite@2.0.0-rc.65':
-    resolution: {integrity: sha512-WzS/Vgu72kSYVjXMlOhaSDdJ4lpcDrziewkS2Z5J6roRlGUT53DZ0MiMO76NZEL7ezE4Ln6e2VHPsDrMBFw1mw==}
+  '@master/css.vite@2.0.0-rc.66':
+    resolution: {integrity: sha512-58/jnxDFW2nQbxuqlVqHMhuwUUrWXfoH9oCE5FLMA0Y/bd24dkyaT1V3eMF7Aw2b4McoZBjWpO9rVMBXY0fT0Q==}
     peerDependencies:
       vite: '>=6'
 
-  '@master/css.vue@2.0.0-rc.65':
-    resolution: {integrity: sha512-ZZLphtCrK9HAz56s0fUHPsFUn6+MVlobh9sjvx+sSgShRXq8Th1/facIMk/vzXxLpY6YdGJL7LnfQFXnWDrZAg==}
+  '@master/css.vue@2.0.0-rc.66':
+    resolution: {integrity: sha512-+k6MkLB3m/9Pf3YOeuQXi+BoLLpC7sANGQ31Y961iAFXjG78cM9wto5K9JRWsQ895ylivdBO5Q8fm/wq42gfvQ==}
     peerDependencies:
       vue: '>= 3.0.0'
 
-  '@master/css@2.0.0-rc.65':
-    resolution: {integrity: sha512-hqWg7s8YAvH1nSv5nj9RvOWDF/jjboZBQaCNBOrTJPg2G7eg4KqymSkc08iDSMdYp5hy4OFRhKC8TqPu4ZH5vQ==}
+  '@master/css@2.0.0-rc.66':
+    resolution: {integrity: sha512-85gppRXyX/BfbZl9AYu503sB3w7cD9fA+mDQ57HLc0IhQbZzaS2vLfTnugPtxsjF7j/AOBndNcyKlSnfDuaPIA==}
     hasBin: true
 
-  '@master/eslint-config-css@2.0.0-rc.65':
-    resolution: {integrity: sha512-IjQZAvsnT47F5PqgXIHH6dQdChA2DkPDdw12q2ErgyT2ZJJdUHE7ynIJMkSV7kbHDwxGHJajDTJs0WAXgQ2dPw==}
+  '@master/eslint-config-css@2.0.0-rc.66':
+    resolution: {integrity: sha512-gOTAZdav1MlTixWAvFq8gmZRVSLTOztkRoGN/ZHayNTnIEM2M4Msh3wkaiSv6brGDgLQgevzrWPl0f8Myyfq7g==}
     peerDependencies:
       eslint: '>=9.0.0'
 
-  '@master/eslint-plugin-css@2.0.0-rc.65':
-    resolution: {integrity: sha512-o2f2LRTuxkLSu7ayCSpkrir815fGPbCBp1QBWWM4z4oOOUKfPXh2NPc+8SluZaruyQ853RMcqQ7KCnu9LMGfSQ==}
+  '@master/eslint-plugin-css@2.0.0-rc.66':
+    resolution: {integrity: sha512-q7iMzkAi5eD/M4DWtgBaIwULZ/um3xPk3Ep4j1pTFlampvwfOLtYJZff9XDjiJoBbcMExPbNpeU4nJitonbe1w==}
 
   '@master/normal.css@3.2.0':
     resolution: {integrity: sha512-ErWm7JPFZGJVfSjCub43vBwaspTbr60hZlXyc0Kw9qp47hDB7dLjfcKj5aBDN/Hog74d4fbjrd7rGqIgRsJy8A==}
@@ -6581,18 +6581,18 @@ snapshots:
 
   '@master/colors@2.1.1': {}
 
-  '@master/css-devtools-hook@2.0.0-rc.65': {}
+  '@master/css-devtools-hook@2.0.0-rc.66': {}
 
-  '@master/css-explore-config@2.0.0-rc.65':
+  '@master/css-explore-config@2.0.0-rc.66':
     dependencies:
       '@techor/log': 3.2.0
       explore-config: 3.2.0
 
-  '@master/css-extractor@2.0.0-rc.65':
+  '@master/css-extractor@2.0.0-rc.66':
     dependencies:
-      '@master/css': 2.0.0-rc.65
-      '@master/css-explore-config': 2.0.0-rc.65
-      '@master/css-validator': 2.0.0-rc.65
+      '@master/css': 2.0.0-rc.66
+      '@master/css-explore-config': 2.0.0-rc.66
+      '@master/css-validator': 2.0.0-rc.66
       '@techor/extend': 3.2.0
       '@techor/glob': 3.2.0
       '@techor/log': 3.2.0
@@ -6601,73 +6601,73 @@ snapshots:
       explore-config: 3.2.0
       minimatch: 10.0.1
 
-  '@master/css-runtime@2.0.0-rc.65':
+  '@master/css-runtime@2.0.0-rc.66':
     dependencies:
-      '@master/css': 2.0.0-rc.65
-      '@master/css-devtools-hook': 2.0.0-rc.65
+      '@master/css': 2.0.0-rc.66
+      '@master/css-devtools-hook': 2.0.0-rc.66
 
-  '@master/css-server@2.0.0-rc.65':
+  '@master/css-server@2.0.0-rc.66':
     dependencies:
-      '@master/css': 2.0.0-rc.65
+      '@master/css': 2.0.0-rc.66
       dom-serializer: 2.0.0
       domhandler: 5.0.3
       htmlparser2: 10.0.0
 
-  '@master/css-validator@2.0.0-rc.65':
+  '@master/css-validator@2.0.0-rc.66':
     dependencies:
-      '@master/css': 2.0.0-rc.65
+      '@master/css': 2.0.0-rc.66
       css-tree: 3.1.0
 
-  '@master/css.nuxt@2.0.0-rc.65(magicast@0.3.5)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))':
+  '@master/css.nuxt@2.0.0-rc.66(magicast@0.3.5)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@master/css-server': 2.0.0-rc.65
-      '@master/css.vite': 2.0.0-rc.65(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))
-      '@master/css.vue': 2.0.0-rc.65(vue@3.5.13(typescript@5.8.3))
+      '@master/css-server': 2.0.0-rc.66
+      '@master/css.vite': 2.0.0-rc.66(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))
+      '@master/css.vue': 2.0.0-rc.66(vue@3.5.13(typescript@5.8.3))
       '@nuxt/kit': 3.16.2(magicast@0.3.5)
     transitivePeerDependencies:
       - magicast
       - vite
       - vue
 
-  '@master/css.vite@2.0.0-rc.65(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))':
+  '@master/css.vite@2.0.0-rc.66(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))':
     dependencies:
-      '@master/css': 2.0.0-rc.65
-      '@master/css-explore-config': 2.0.0-rc.65
-      '@master/css-extractor': 2.0.0-rc.65
-      '@master/css-runtime': 2.0.0-rc.65
-      '@master/css-server': 2.0.0-rc.65
+      '@master/css': 2.0.0-rc.66
+      '@master/css-explore-config': 2.0.0-rc.66
+      '@master/css-extractor': 2.0.0-rc.66
+      '@master/css-runtime': 2.0.0-rc.66
+      '@master/css-server': 2.0.0-rc.66
       '@master/normal.css': 3.2.0
       fast-glob: 3.3.3
       magic-string: 0.30.17
       source-map: 0.7.4
       vite: 6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1)
 
-  '@master/css.vue@2.0.0-rc.65(vue@3.5.13(typescript@5.8.3))':
+  '@master/css.vue@2.0.0-rc.66(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@master/css-runtime': 2.0.0-rc.65
+      '@master/css-runtime': 2.0.0-rc.66
       '@techor/extend': 3.2.0
       vue: 3.5.13(typescript@5.8.3)
 
-  '@master/css@2.0.0-rc.65':
+  '@master/css@2.0.0-rc.66':
     dependencies:
       '@master/colors': 2.1.1
       '@master/normal.css': 3.2.0
       '@techor/extend': 3.2.0
       csstype: 3.1.3
 
-  '@master/eslint-config-css@2.0.0-rc.65(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)':
+  '@master/eslint-config-css@2.0.0-rc.66(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
-      '@master/eslint-plugin-css': 2.0.0-rc.65(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+      '@master/eslint-plugin-css': 2.0.0-rc.66(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
       eslint: 9.25.1(jiti@2.4.2)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  '@master/eslint-plugin-css@2.0.0-rc.65(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)':
+  '@master/eslint-plugin-css@2.0.0-rc.66(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
-      '@master/css': 2.0.0-rc.65
-      '@master/css-explore-config': 2.0.0-rc.65
-      '@master/css-validator': 2.0.0-rc.65
+      '@master/css': 2.0.0-rc.66
+      '@master/css-explore-config': 2.0.0-rc.66
+      '@master/css-validator': 2.0.0-rc.66
       '@typescript-eslint/utils': 8.31.0(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
       typescript-eslint: 8.31.0(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
     transitivePeerDependencies:

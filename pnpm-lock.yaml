@@ -24,7 +24,7 @@ importers:
         specifier: ^0.11.2
         version: 0.11.2(@netlify/blobs@8.2.0)(db0@0.3.2(better-sqlite3@11.9.1))(ioredis@5.6.1)(magicast@0.3.5)(vite@6.3.5(@types/node@22.15.11)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))
       '@nuxt/icon':
-        specifier: 1.12.0
+        specifier: ^1.12.0
         version: 1.12.0(magicast@0.3.5)(vite@6.3.5(@types/node@22.15.11)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))
       '@nuxt/image':
         specifier: 1.10.0
@@ -841,8 +841,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify/collections@1.0.540':
-    resolution: {integrity: sha512-dy5UPhfMAmN2fuNvS4mgCyo+/NsYFSTiZK3SpCHAQ2dbOpREXaGnA+RAs3pRsf/9jg3QLDBMKoDNsd7233ZLqw==}
+  '@iconify/collections@1.0.545':
+    resolution: {integrity: sha512-LQprSmX6Wp69insYYSHM6bj5ZF4gT4ZwoqX9UXdCxGxRMzRpaNzQZUZ++2kP0wnOg3lX2ocMla8ns8oRPzxO2g==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -7037,7 +7037,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@iconify/collections@1.0.540':
+  '@iconify/collections@1.0.545':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -7742,12 +7742,12 @@ snapshots:
 
   '@nuxt/icon@1.12.0(magicast@0.3.5)(vite@6.3.5(@types/node@22.15.11)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
-      '@iconify/collections': 1.0.540
+      '@iconify/collections': 1.0.545
       '@iconify/types': 2.0.0
       '@iconify/utils': 2.3.0
       '@iconify/vue': 4.3.0(vue@3.5.13(typescript@5.8.3))
       '@nuxt/devtools-kit': 2.4.0(magicast@0.3.5)(vite@6.3.5(@types/node@22.15.11)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))
-      '@nuxt/kit': 3.16.2(magicast@0.3.5)
+      '@nuxt/kit': 3.17.2(magicast@0.3.5)
       consola: 3.4.2
       local-pkg: 1.1.1
       mlly: 1.7.4

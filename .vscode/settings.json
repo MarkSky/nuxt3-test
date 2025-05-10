@@ -13,6 +13,7 @@
         "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .npmrc, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, stylelint.*",
         ".env": ".env.*"
     },
+    "nuxtr.defaultPackageManager": "pnpm",
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#65c89b",
         "activityBar.background": "#65c89b",

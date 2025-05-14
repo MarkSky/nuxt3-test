@@ -22,6 +22,10 @@ export default defineNuxtConfig({
         },
     },
 
+    runtimeConfig: {
+        public: {},
+    },
+
     compatibilityDate: '2024-11-01',
 
     eslint: {

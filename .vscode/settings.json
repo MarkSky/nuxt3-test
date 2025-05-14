@@ -13,7 +13,13 @@
         "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .npmrc, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, stylelint.*",
         ".env": ".env.*"
     },
+    "i18n-ally.localesPaths": [
+        "i18n",
+        "i18n/locales"
+    ],
     "nuxtr.defaultPackageManager": "pnpm",
+    "peacock.color": "#42b883",
+    "vitest.nodeExecutable": "C:/Users/user/AppData/Roaming/fnm/node-versions/v24.0.1/installation/node.exe",
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#65c89b",
         "activityBar.background": "#65c89b",
@@ -33,9 +39,4 @@
         "titleBar.inactiveBackground": "#42b88399",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#42b883",
-    "i18n-ally.localesPaths": [
-        "i18n",
-        "i18n/locales"
-    ]
 }

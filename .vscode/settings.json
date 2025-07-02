@@ -19,7 +19,7 @@
     ],
     "nuxtr.defaultPackageManager": "pnpm",
     "peacock.color": "#42b883",
-    "vitest.nodeExecutable": "C:/Users/user/AppData/Roaming/fnm/node-versions/v24.0.1/installation/node.exe",
+    "vitest.nodeExecutable": "C:/Users/user/AppData/Roaming/fnm/node-versions/v24.3.0/installation/node.exe",
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#65c89b",
         "activityBar.background": "#65c89b",
